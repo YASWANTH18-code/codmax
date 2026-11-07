@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Write a blog | BlogSpace</title><link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="navbar">
+  <a href="/" class="logo"><span class="logo-icon">B</span> BlogSpace</a>
+  <nav class="nav-links"><a href="/">Home</a><a href="dashboard.html">Dashboard</a></nav>
+  <div class="nav-buttons"><a href="dashboard.html" class="secondary-btn">Cancel</a></div>
+</header>
+<main class="editor-wrap">
+  <div class="editor-heading"><span class="eyebrow">YOUR NEXT STORY STARTS HERE</span><h1 id="editorTitle">Write a new blog</h1><p class="muted">Give your idea a title, choose a category and tell your story.</p></div>
+  <form id="blogForm" class="editor-card">
+    <label for="title">Blog title</label><input id="title" maxlength="140" placeholder="Give your story a great title" required>
+    <label for="category">Category</label>
+    <select id="category" class="select-control"><option>Technology</option><option>Lifestyle</option><option>Education</option><option>Travel</option><option>Business</option><option>Other</option></select>
+    <label for="coverImage">Cover image URL <span class="muted">(optional)</span></label><input id="coverImage" type="url" placeholder="https://example.com/image.jpg">
+    <label for="content">Your story</label><textarea id="content" rows="14" maxlength="30000" placeholder="Start writing here..." required></textarea>
+    <div class="editor-actions"><a href="dashboard.html" class="secondary-btn">Cancel</a><button id="submitBlog" type="submit" class="primary-btn">Publish blog</button></div>
+    <p id="formMessage" class="form-message" aria-live="polite"></p>
+  </form>
+</main>
+<script src="js/api.js"></script><script src="js/create-blog.js"></script>
+</body>
+</html>

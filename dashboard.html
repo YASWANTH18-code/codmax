@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | BlogSpace</title><link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="navbar">
+  <a href="/" class="logo"><span class="logo-icon">B</span> BlogSpace</a>
+  <nav class="nav-links"><a href="/">Home</a><a class="active" href="dashboard.html">Dashboard</a></nav>
+  <div class="nav-buttons"><button id="logoutBtn" class="secondary-btn">Log out</button></div>
+</header>
+<main class="dashboard section">
+  <div class="section-heading">
+    <div><span class="eyebrow">YOUR WRITING SPACE</span><h1>Welcome, <span id="userName">writer</span></h1><p>Manage your stories and share something new.</p></div>
+    <a href="create-blog.html" class="primary-btn">＋ Write a blog</a>
+  </div>
+  <div class="dashboard-summary"><div><strong id="blogCount">0</strong><span>Your blog posts</span></div><div><strong id="userEmail">—</strong><span>Signed in as</span></div></div>
+  <h2 class="subheading">Your stories</h2>
+  <div id="dashboardBlogs" class="dashboard-list"><p class="muted">Loading your blogs...</p></div>
+  <p id="dashboardMessage" class="form-message" aria-live="polite"></p>
+</main>
+<script src="js/api.js"></script><script src="js/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BlogSpace | Share Your Stories</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="navbar">
+  <a href="/" class="logo"><span class="logo-icon">B</span> BlogSpace</a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+  <nav class="nav-links" id="navLinks">
+    <a class="active" href="/">Home</a>
+    <a href="#explore">Explore</a>
+    <a href="#about">About</a>
+  </nav>
+  <div class="nav-buttons" id="navButtons">
+    <a href="login.html" class="login-btn">Login</a>
+    <a href="register.html" class="primary-btn">Get Started</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-content">
+      <span class="eyebrow">✦ YOUR IDEAS DESERVE TO BE HEARD</span>
+      <h1>Share your stories.<br><span>Inspire the world.</span></h1>
+      <p>A place for curious minds, creative thinkers and passionate writers to share ideas, discover stories and connect with people.</p>
+      <div class="hero-actions">
+        <a href="register.html" class="primary-btn">Start Writing →</a>
+        <a href="#explore" class="secondary-btn">Explore Blogs</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>Ideas</strong><small>Worth sharing</small></div>
+        <div><strong>Stories</strong><small>Worth reading</small></div>
+        <div><strong>People</strong><small>Worth meeting</small></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-image"><img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=1000" alt="Notebook and writing desk"></div>
+      <div class="floating-note"><span>✍️</span><div><b>Write freely</b><small>Express your ideas</small></div></div>
+    </div>
+  </section>
+
+  <section class="section" id="explore">
+    <div class="section-heading">
+      <div><span class="eyebrow">DISCOVER SOMETHING NEW</span><h2>Explore latest stories</h2><p>Ideas, experiences and perspectives worth reading.</p></div>
+      <a class="text-link" href="register.html">Become a writer →</a>
+    </div>
+    <div class="toolbar">
+      <input id="searchInput" class="search-input" type="search" placeholder="Search stories..." aria-label="Search stories">
+      <select id="categoryFilter" class="select-control" aria-label="Filter category">
+        <option value="All">All categories</option>
+        <option>Technology</option><option>Lifestyle</option><option>Education</option>
+        <option>Travel</option><option>Business</option><option>Other</option>
+      </select>
+    </div>
+    <div id="blogGrid" class="blog-grid"><p class="muted">Loading stories...</p></div>
+    <p id="homeMessage" class="form-message" aria-live="polite"></p>
+  </section>
+
+  <section class="about-band" id="about">
+    <span class="eyebrow">WHY BLOGSPACE?</span>
+    <h2>Your voice. Your ideas. Your community.</h2>
+    <p>Write, share knowledge, explore new ideas and connect with readers.</p>
+    <a href="register.html" class="primary-btn">Join our community →</a>
+  </section>
+</main>
+<footer class="footer"><a href="/" class="logo"><span class="logo-icon">B</span> BlogSpace</a><p>© 2026 BlogSpace. Built for people who love sharing ideas.</p></footer>
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
